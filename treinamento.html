@@ -1,0 +1,168 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Roi de UX</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="styles/vendor.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/vendor/modernizr.js"></script>
+
+    <!-- Hotjar Tracking Code for http://roideux.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:827171,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+</head>
+
+<body>
+    <!--[if IE]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+    <ul id="menu" class="hidden-xs hidden-sm hidden-md hidden-lg">
+        <li><a href="index.html#principal">O que é ROI?</a></li>
+        <li><a href="index.html#quem-somos">Quem somos?</a></li>
+        <li><a href="index.html#calculadoras">Calculadoras</a></li>
+        <li><a href="index.html#workshops">Workshops</a></li>
+        <li><a href="http://inbeta.com.br">Contato</a></li>
+
+    </ul>
+    <nav class="navbar navbar-custom" id="top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><img alt="Brand" src="images/logo.svg"></a>
+            </div>
+            <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
+        <li><a href="index.html#principal">O que é ROI?</a></li>
+        <li><a href="index.html#quem-somos">Quem somos?</a></li>
+        <li><a href="index.html#calculadoras">Calculadoras</a></li>
+        <li><a href="index.html#workshops">Workshops</a></li>
+        <li><a href="http://inbeta.com.br">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid page-calculadora">
+        <section id="app" class="principal">
+            <div class="row">
+                <div class="col-lg-12 card">
+                    <div class="row">
+                        <div class="col-lg-12"><img src="images/training-icon.svg" class="icon"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12 left">
+                            <h1>Custos reduzidos no treinamento formal</h1>
+                            <p>As melhorias de usabilidade em seu site ou aplicativo podem reduzir a necessidade de treinamento e aumentar o ROI, se utilizando de aplicações mais fáceis de se aprender a usar.</p>
+                            <p><strong>Exemplo:<br>Ao trocar todo um sistema de gestão administrativa da multinacional, optamos por um que não necessitava de treinamentos extensos para a implementação, então os custos com treinamento cairam em 40% na empresa.</strong></p>
+                        </div>
+                        <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12 right">
+                            <h1>Como calcular o ROI da redução de treinamento?</h1>
+                            <p>Para entender qual o retorno do investimento sobre a redução de treinamento, você precisa das seguintes métricas.</p>
+                            <ul>
+                                <li>Redução das necessidades de treinamento</li>
+                                <li>Salário anual (empregado)</li>
+                                <li>Custo de melhoria</li>
+                                <li>Número de usuários alvo</li>
+                                <li>Custo anual de treinamento</li>
+                                <li>Vida esperada do projeto</li>
+                                <li>Duração das horas de treinamento</li>
+                                <li>Número de aulas</li>
+                            </ul>
+                            <p>Juntou essas métricas? Então coloque os dados na calculadora abaixo e veja quanto foi o seu ROI por esse projeto.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="mg-top">Calculadora de ROI do treinamento formal</h1></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <form class="form-horizontal calculadora">
+                                <div class="form-group">
+                                    <label for="usuarios" class="col-sm-8">Redução das necessidades de treinamento:</label>
+                                    <div class="col-sm-4">
+                                        <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" id="usuarios" placeholder="40" v-model="ReductioninTrainingNeeds"> <span>%</span></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="usuarios" class="col-sm-8">Salário anual (empregado):</label>
+                                    <div class="col-sm-4">
+                                        <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" id="usuarios" placeholder="30000" v-model="LoadedSalaryTrainee"> <span>(R$)</span></div>
+                                </div>                             
+                                <div class="form-group">
+                                    <label for="usuarios" class="col-sm-8">Custo de melhoria:</label>
+                                    <div class="col-sm-4">
+                                        <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" id="usuarios" placeholder="100000" v-model="InitialCostInvestment"> <span>(R$)</span></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="usuarios" class="col-sm-8">Número de usuários alvo:</label>
+                                    <div class="col-sm-4">
+                                        <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" id="usuarios" placeholder="2000" v-model="NumberOfUsers"> <span>Usuários</span></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="usuarios" class="col-sm-8">Custo anual de treinamento:</label>
+                                    <div class="col-sm-4">
+                                        <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" id="usuarios" placeholder="40000" v-model="LoadedSalaryTrainer"> <span>(R$)</span></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="usuarios" class="col-sm-8">Vida esperada do projeto:</label>
+                                    <div class="col-sm-4">
+                                        <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" id="usuarios" placeholder="3" v-model="ExpectedProjectLife"> <span>Anos</span></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="usuarios" class="col-sm-8">Duração do treinamento:</label>
+                                    <div class="col-sm-4">
+                                        <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" id="usuarios" placeholder="20" v-model="DurationofTraining"> <span>Horas</span></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="usuarios" class="col-sm-8">Número de aulas:</label>
+                                    <div class="col-sm-4">
+                                        <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" id="usuarios" placeholder="100" v-model="NumberofClasses"> <span>Turmas</span></div>
+                                </div>
+                                <!--<button type="submit" class="btn btn-custom">Calcular</button>-->
+                            </form>
+                        </div>
+                        <div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-12 col-xs-12 resultados">
+                            <h2>Ganho futuro com essa melhoria:</h2>
+                            <h3>{{ resultFuture | currency }}</h3>
+                            <h2>Ganho total com essa melhoria:</h2>
+                            <h3>{{ resultBest | currency }}</h3>
+                            <h2>A sua taxa de ROI é:</h2>
+                            <h3>{{ resultRoi | percentage }} </h3></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 disclaimer-calc">
+                            <p>O Ganho total é calculado usando um modelo de fluxo de caixa com depreciação padrão de 0.05%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p class="text-center">Feito com <i class="fas fa-heart"></i> no Brasil © 2018</p>
+    </footer>
+    <a href="#top" class="top">
+        <div><i class="fas fa-chevron-circle-up fa-4x"></i></div>
+    </a>
+    <script>
+        ! function(e, a, t, n, g, c) {
+            e.GoogleAnalyticsObject = n, e.ga || (e.ga = function() {
+                (e.ga.q = e.ga.q || []).push(arguments)
+            }), e.ga.l = +new Date, g = a.createElement(t), c = a.getElementsByTagName(t)[0], g.src = "https://www.google-analytics.com/analytics.js", c.parentNode.insertBefore(g, c)
+        }(window, document, "script", "ga"), ga("create", "UA-XXXXX-X"), ga("send", "pageview")
+    </script>
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/plugins.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="scripts/vue/training.js"></script>            
+</body>
+
+</html>

@@ -54,34 +54,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MK8DV3D"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+   
+
     <!--[if IE]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
     <ul id="menu" class="hidden-xs hidden-sm hidden-md hidden-lg">
-        <li><a href="index.html#principal">O que é ROI?</a></li>
-        <li><a href="index.html#quem-somos">Quem somos?</a></li>
-        <li><a href="index.html#calculadoras">Calculadoras</a></li>
-        <li><a href="index.html#workshops">Workshops</a></li>
-        <li><a href="http://inbeta.com.br">Contato</a></li>
+        <li><a href="index.html#principal" title="O que é ROI?">O que é ROI?</a></li>
+        <li><a href="index.html#quem-somos" title="Quem somos?">Quem somos?</a></li>
+        <li><a href="index.html#calculadoras" title="Calculadoras">Calculadoras</a></li>
+        <li><a href="http://inbeta.com.br" title="Contato" onclick="myFunction()" target="_Blank">Contato</a></li>
     </ul>
     <nav class="navbar navbar-custom" id="top">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.html"><img alt="Brand" src="images/logo.svg"></a>
+                <a class="navbar-brand" href="index.html" title="ROI DE UX" ><img src="images/logo.svg" alt="ROI DE UX"></a>
             </div>
             <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
-        <li><a href="index.html#principal">O que é ROI?</a></li>
-        <li><a href="index.html#quem-somos">Quem somos?</a></li>
-        <li><a href="index.html#calculadoras">Calculadoras</a></li>
-        <li><a href="index.html#workshops">Workshops</a></li>
-        <li><a href="http://inbeta.com.br">Contato</a></li>
+				<li><a href="index.html#principal" title="O que é ROI?">O que é ROI?</a></li>
+				<li><a href="index.html#quem-somos" title="Quem somos?">Quem somos?</a></li>
+				<li><a href="index.html#calculadoras" title="Calculadoras">Calculadoras</a></li>
+				<li><a href="http://inbeta.com.br" title="Contato" onclick="myFunction()" target="_Blank">Contato</a></li>
             </ul>
         </div>
     </nav>
+
+
     <div class="container-fluid page-calculadora">
         <section id="app" class="principal">
             <div class="row">
                 <div class="col-lg-12 card">
                     <div class="row">
-                        <div class="col-lg-12"><img src="images/productivity-icon.svg" class="icon"></div>
+                        <div class="col-lg-12"><img src="images/productivity-icon.svg" class="icon" alt="Produtividade - ROI DE UX"></div>
                     </div>
                     <div class="row">
                         <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12 left">
@@ -92,7 +94,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12 right">
                             <h1>Como calcular o ROI do aumento da produtividade?</h1>
                             <p>Para entender qual o retorno do investimento sobre o aumento da produtividade, você precisa das seguintes métricas.</p>
-                            <ul>
+                            <ul class="list-metrics">
                                 <li>Número de Usuários</li>
                                 <li>Número de acessos por dia</li>
                                 <li>Quantos dias por ano</li>
@@ -184,7 +186,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </section>
     </div>
     <footer>
-        <p class="text-center">Feito com <i class="fas fa-heart"></i> no Brasil © 2018</p>
+        <p class="text-center">Feito com <i class="fas fa-heart"></i> no Brasil © 2019</p>
     </footer>
     <a href="#top" class="top">
         <div><i class="fas fa-chevron-circle-up fa-4x"></i></div>
@@ -194,6 +196,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="scripts/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="scripts/vue/productivity.js"></script>
+
+    <script type="text/javascript">
+		function myFunction() {
+			var myWindow = window.open("https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F365050600707515%2F%3Fmessaging_source%3Dsource%253Apages%253Amessage_shortlink", "", "width=420,height=1260");
+		}
+	</script>
 </body>
 
 </html>

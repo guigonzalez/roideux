@@ -14,6 +14,15 @@ These instructions will get you a copy of the project up and running on your loc
 
 See also the list of [contributors](https://github.com/guigonzalez/roideux/contributors) who participated in this project.
 
+## Contribution
+
+- Review of front-end development
+- Correction of bags in desktop and mobile versions
+- SEO in meta tags for indexing content on google
+
+* **Alan Fernandes** - *DesignOps - Developer*
+
+
 ## Acknowledgments
 
 * To create more understanding about ROI of UX.

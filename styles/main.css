@@ -7038,14 +7038,14 @@ button.close {
 }
 
 .page-calculadora .card ul li:before,.page-calculadora .form-horizontal.calculadora .btn-custom,.principal .form-inline .btn.btn-custom,.quem-somos {
-    background: #bb0f80;
-    background: linear-gradient(90deg,#bb0f80 0,#e62a44 50%,#ee582f);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bb0f80",endColorstr="#ee582f",GradientType=1)
+    background: #4A2FEE;
+    background: linear-gradient(90deg,#4A2FEE 0,#9F2AE6 50%,#0F73BB);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4A2FEE",endColorstr="#ee582f",GradientType=1)
 }
 
 .top div:before,.workshops {
     background: #eef1f6;
-    background: linear-gradient(270deg,#eef1f6 0,#f5f7f9 50%,#fcfdfd);
+    background: linear-gradient(90deg,#4A2FEE 0,#9F2AE6 50%,#0F73BB);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eef1f6",endColorstr="#fcfdfd",GradientType=1)
 }
 
@@ -7091,8 +7091,9 @@ body {
 }
 
 .principal h1 {
-    color: rgba(133,145,176,.5);
+    color: #C892E7;
     font-size: 20px;
+    font-weight: bold;
     text-transform: uppercase
 }
 
@@ -7202,7 +7203,7 @@ body {
 }
 
 .principal .card a:link, .principal .card a:hover, .principal .card a:active {
-    width: 280px;
+    width: 420px;
     min-height: 41px;
     text-align: center;
     line-height: 33px;
@@ -7210,8 +7211,8 @@ body {
     text-transform: uppercase;
     color: #fff;
     border: 2px solid inherit;
-    background: 2px linear-gradient(90deg,#bb0f80 0,#e62a44 50%,#ee582f);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bb0f80",endColorstr="#ee582f",GradientType=1);
+    background: 2px linear-gradient(90deg,#0F73BB 0,#9F2AE6 50%,#4A2FEE);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4A2FEE",endColorstr="#ee582f",GradientType=1);
     display: table;
     margin: 0px auto;
     outline: none;
@@ -7225,19 +7226,19 @@ body {
 }
 
 
-.principal .card a .btn-custom span:before {
+/*.principal .card a .btn-custom span:before {
     content: url(../images/medium-icon.svg);
     margin-right: 7px;
     margin-left: -7px;
-}
+}*/
 
 .secao-calculadoras {
     padding: 50px 50px 0
 }
 
 .secao-calculadoras h1 {
-    background: #bb0f80;
-    background: linear-gradient(90deg,#bb0f80 0,#e62a44 50%,#ee582f);
+    background: #0F73BB;
+    background: linear-gradient(90deg,#0F73BB 0,#9F2AE6 50%,#4A2FEE);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -7285,7 +7286,7 @@ body {
 }
 
 .secao-calculadoras .card .link a:hover {
-    color: #bb0f80;
+    color: #4A2FEE;
     text-decoration: none;
 }
 
@@ -7419,8 +7420,8 @@ body {
 }
 
 .workshops .cta a,.workshops .cta a i {
-    background: #bb0f80;
-    background: linear-gradient(90deg,#bb0f80 0,#e62a44 50%,#ee582f);
+    background: #4A2FEE;
+    background: linear-gradient(90deg,#0F73BB 0,#9F2AE6 28%,#4A2FEE);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text
@@ -7452,8 +7453,8 @@ footer i {
 }
 
 .top i {
-    background: #bb0f80;
-    background: linear-gradient(90deg,#bb0f80 0,#e62a44 50%,#ee582f);
+    background: #FFFFFF;
+    background: linear-gradient(90deg,#0F73BB 0,#9F2AE6 28%,#4A);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text
@@ -7505,7 +7506,7 @@ footer i {
     content: "";
     width: 4px;
     height: 90%;
-    background-color: #d51f5a;
+    background-color: #4A2FEE;
     position: absolute;
     top: 70px;
     left: -25px;
@@ -7562,7 +7563,7 @@ footer i {
 .page-calculadora .form-horizontal.calculadora input,.page-calculadora .form-horizontal.calculadora select {
     height: 30px;
     border-radius: 5px;
-    border: 1px solid #bb0f80;
+    border: 1px solid #4A2FEE;
     color: #4d4d4d;
     text-align: center;
     display: inline-block;
@@ -7603,7 +7604,7 @@ footer i {
     content: "";
     width: 4px;
     height: 100%;
-    background-color: #d51f5a;
+    background-color: #4A2FEE;
     position: absolute;
     top: 10px;
     left: -50px;
@@ -7620,7 +7621,7 @@ footer i {
 
 .page-calculadora .resultados h3 {
     font-size: 45px;
-    color: #d21e61;
+    color: #4A2FEE;
     letter-spacing: .9px;
     font-weight: 700;
     margin: 0;
@@ -7656,8 +7657,8 @@ footer i {
     }
 
     .slicknav_nav {
-        background: #bb0f80;
-        background: linear-gradient(180deg,#bb0f80 0,#e62a44 50%,#ee582f);
+        background: #4A2FEE;
+        background: linear-gradient(180deg,#0F73BB 0,#9F2AE6 28%,#4A2FEE);
         width: 60%;
         position: absolute;
         top: 70px;
@@ -7669,7 +7670,7 @@ footer i {
         padding: 10px;
         color: #fff;
         font-weight: 700;
-        border-bottom: 1px solid #bb0f80
+        border-bottom: 1px solid #4A2FEE
     }
 
     .slicknav_nav li:last-child a {
@@ -7727,8 +7728,8 @@ footer i {
     }
 
     .slicknav_nav {
-        background: #bb0f80;
-        background: linear-gradient(180deg,#bb0f80 0,#e62a44 50%,#ee582f);
+        background: #4A2FEE;
+        background: linear-gradient(180deg,#0F73BB 0,#9F2AE6 50%,#4A2FEE);
         width: 60%;
         position: absolute;
         top: 70px;
@@ -7740,7 +7741,7 @@ footer i {
         padding: 10px;
         color: #fff;
         font-weight: 700;
-        border-bottom: 1px solid #bb0f80
+        border-bottom: 1px solid #FFF
     }
 
     .slicknav_nav li:last-child a {
@@ -7806,8 +7807,8 @@ footer i {
     }
 
     .quem-somos {
-        background: #bb0f80;
-        background: linear-gradient(180deg,#bb0f80 0,#e62a44 50%,#ee582f);
+        background: #4A2FEE;
+        background: linear-gradient(180deg,#0F73BB 0,#9F2AE6 50%,#4A2FEE);
         text-align: center;
         padding: 50px 10px;
         padding-bottom: 0px;
@@ -7850,7 +7851,7 @@ footer i {
         width: 20px;
         height: 5px;
         border: 0;
-        background-color: #bb0f80
+        background-color: #4A2FEE
     }
 
     .page-calculadora {

@@ -25,19 +25,26 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-custom" id="top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.html" title="ROI DE UX" ><img src="images/logo.svg" alt="ROI DE UX"></a>
+    <!--[if IE]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+    <ul id="menu" class="hidden-xs hidden-sm hidden-md hidden-lg">
+            <li><a href="index.html#principal" title="O que é ROI?">O que é ROI?</a></li>
+            <li><a href="index.html#quem-somos" title="Quem somos?">Quem sou eu?</a></li>
+            <li><a href="index.html#calculadoras" title="Calculadoras">Calculadoras</a></li>
+            <li><a href="index.html#contato" title="Contato" onclick="myFunction()" target="_Blank">Contato</a></li>
+        </ul>
+        <nav class="navbar navbar-custom" id="top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html" title="ROI DE UX" ><img src="images/logo.svg" alt="ROI DE UX"></a>
+                </div>
+                <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
+                    <li><a href="index.html#principal" title="O que é ROI?">O que é ROI?</a></li>
+                    <li><a href="index.html#quem-somos" title="Quem somos?">Quem sou eu?</a></li>
+                    <li><a href="index.html#calculadoras" title="Calculadoras">Calculadoras</a></li>
+                    <li><a href="index.html#contato" title="Contato" onclick="myFunction()" target="_Blank">Contato</a></li>
+                </ul>
             </div>
-            <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
-                <li><a href="index.html#principal" title="O que é ROI?">O que é ROI?</a></li>
-                <li><a href="index.html#quem-somos" title="Quem somos?">Quem sou eu?</a></li>
-                <li><a href="index.html#calculadoras" title="Calculadoras">Calculadoras</a></li>
-                <li><a href="index.html#contato" title="Contato" onclick="myFunction()" target="_Blank">Contato</a></li>
-            </ul>
-        </div>
-    </nav>
+        </nav>
 
 
     <div class="container-fluid page-calculadora">
@@ -45,23 +52,23 @@
             <div class="row">
                 <div class="col-lg-12 card">
                     <div class="row">
-                        <div class="col-lg-12"><img src="images/helpdesk-icon.svg" class="icon"></div>
+                        <div class="col-lg-12"><img src="images/productivity-icon.svg" class="icon" alt="Produtividade - ROI DE UX"></div>
                     </div>
                     <div class="row">
                         <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12 left">
-                            <h1>Redução de ligações no suporte</h1>
-                            <p>Se os clientes podem localizar informações com facilidade em seu site e precisam menos de ajuda do suporte, reduzindo os custos e melhorando o ROI.</p>
-                            <p><strong>Exemplo:<br>Montamos um site com um FAQ bem completo e vivemos atualizando as informações para casos novos. Logo nossas ligações no suporte cairam 25%.</strong></p>
+                            <h1>Otimização da Produtividade da Equipe</h1>
+                            <p>Para aplicações com muito uso, reduzir 3 segundos em uma tela pode significar muito nos retornos. Calcule como um aumento na eficiência do usuário afeta o ROI para usabilidade.</p>
+                            <p><strong>Exemplo:<br>O Dashboard do seu sistema carrega 10 segundos mais rápido, devido a melhorias na usabilidade. Logo, você economiza 10 segundos todas vez que seus funcionários acessam o Dashboard.</strong></p>
                         </div>
                         <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12 right">
-                            <h1>Como calcular o ROI da redução de ligações no suporte?</h1>
-                            <p>Para entender qual o retorno do investimento sobre o redução de ligações no suporte, você precisa das seguintes métricas.</p>
+                            <h1>Como calcular o ROI do aumento da produtividade?</h1>
+                            <p>Para entender qual o retorno do investimento sobre o aumento da produtividade, você precisa das seguintes métricas.</p>
                             <ul class="list-metrics">
-                                <li>Número de ligações para o Call Center</li>
-                                <li>Redução do volume de ligações</li>
+                                <li>Número de Usuários</li>
+                                <li>Número de acessos por dia</li>
                                 <li>Quantos dias por ano</li>
                                 <li>Salário por ano</li>
-                                <li>Tempo médio das ligações</li>
+                                <li>Aumento de Produtividade</li>
                                 <li>Custo do Investimento</li>
                                 <li>Tempo de Vida do Projeto</li>
                             </ul>
@@ -70,64 +77,62 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-12">
-                            <h1 class="mg-top">Calculadora de ROI da redução de ligações no suporte</h1></div>
+                            <h1 class="mg-top">Calculadora de ROI do Aumento de Produtividade</h1></div>
                     </div>
                     <div class="row">
                         <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
-                            <form class="form-horizontal calculadora">
+                            <br />
+                            <form class="form-horizontal calculadora" @submit.prevent="onSubmit">
                                 <div class="form-group">
-                                    <label for="usuarios" class="col-sm-7">Número de ligações:</label>
+                                    <label for="usuarios" class="col-sm-7">Número de usuários:</label>
                                     <div class="col-sm-5">
-                                        <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" v-model="NumberofCallsperyear">
-                                        <span>por ano</span></div>
+                                        <input type="number" onkeypress="return event.charCode >= 48" min="0"class="form-control" placeholder="500" v-model="NoOfUsers"> <span>Usuários</span>
+                                    </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="usuarios" class="col-sm-7">Redução do vol. de ligações:</label>
+                                    <label for="usuarios" class="col-sm-7">Número de acessos por dia:</label>
                                     <div class="col-sm-5">
-                                        <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" v-model="CallVolumeReduction">
-                                        <span>%</span></div>
+                                        <input type="number" onkeypress="return event.charCode >= 48" min="0"class="form-control" placeholder="50" v-model="UsesPerDay"> <span>Acessos</span>
+                                    </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="usuarios" class="col-sm-7">Quantos dias por ano:</label>
                                     <div class="col-sm-5">
-                                        <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" v-model="DaysPerYear">
-                                        <span>Dias</span></div>
+                                        <input type="number" onkeypress="return event.charCode >= 48" min="0"class="form-control" placeholder="230" v-model="DaysPerYear"> <span>Dias</span></div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="usuarios" class="col-sm-7">Horas de trabalho por dia:</label>
-                                    <div class="col-sm-5">
-                                        <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" v-model="WorkDayHours">
-                                        <span>Hs</span>
+                                        <label for="usuarios" class="col-sm-7">Horário de trabalho por dia:</label>
+                                        <div class="col-sm-5">
+                                            <input type="number" onkeypress="return event.charCode >= 48" min="0"class="form-control" placeholder="8" v-model="WorkDayHours"> <span>horas/dia</span></div>
                                     </div>
-                                </div>
                                 <div class="form-group">
                                     <label for="usuarios" class="col-sm-7">Salário por ano:</label>
                                     <div class="col-sm-5">
-                                        <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" v-model="LoadedSalary">
-                                        <span>(R$)</span></div>
+                                        <input type="number" onkeypress="return event.charCode >= 48" min="0"class="form-control" placeholder="30000" v-model="LoadedSalary"> <span>(R$)</span>
+                                    </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="usuarios" class="col-sm-7">Tempo médio das ligações:</label>
+                                    <label for="usuarios" class="col-sm-7">Aumento da produtividade:</label>
                                     <div class="col-sm-5">
-                                        <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" v-model="AverageLengthofcall">
-                                        <select class="form-control" v-model="LengthofCallTimeUnit">
-                                            <option>Hs</option>
-                                            <option>Min</option>
+                                        <input type="number" onkeypress="return event.charCode >= 48" min="0"class="form-control" placeholder="3" v-model="IncreaseInEfficiency">
+                                        <select class="form-control" v-model="EfficiencyTimeUnit">
                                             <option>Seg</option>
+                                            <option>Min</option>
+                                            <option>Hs</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="usuarios" class="col-sm-7">Custo do investimento:</label>
                                     <div class="col-sm-5">
-                                        <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" v-model="InitialCostInvestment">
-                                        <span>(R$)</span></div>
+                                        <input type="number" onkeypress="return event.charCode >= 48" min="0"class="form-control" placeholder="10000" v-model="InitialCostInvestment"> <span>(R$)</span>
+                                    </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="usuarios" class="col-sm-7">Tempo de vida do projeto:</label>
                                     <div class="col-sm-5">
-                                        <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" v-model="ExpectedProjectLife">
-                                        <span>Anos</span></div>
+                                        <input type="number" onkeypress="return event.charCode >= 48" min="0"class="form-control" placeholder="3" v-model="ExpectedProjectLife"> <span>Anos</span>
+                                    </div>
                                 </div>
                                 <!--<button type="submit" class="btn btn-custom">Calcular</button>-->
                             </form>
@@ -159,7 +164,7 @@
     <script src="scripts/plugins.js"></script>
     <script src="scripts/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="scripts/vue/helpdesk.js"></script>
+    <script src="scripts/vue/productivity.js"></script>
 
     <script type="text/javascript">
 		function myFunction() {
@@ -167,4 +172,5 @@
 		}
 	</script>
 </body>
+
 </html>

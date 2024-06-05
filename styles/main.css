@@ -39,7 +39,7 @@ h1 {
 }
 img {
   border: 0;
-  height: 100px;
+  height: 90px;
 }
 svg:not(:root) {
   overflow: hidden;
@@ -1507,7 +1507,7 @@ footer i {
 }
 .top i {
   background: #fff;
-  background: linear-gradient(90deg, #0f73bb 0, #9f2ae6 28%, #4A);
+  background: linear-gradient(90deg, #0f73bb 0, #9f2ae6 28%, #4A2FEE);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;

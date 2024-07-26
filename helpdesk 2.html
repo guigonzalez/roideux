@@ -1,0 +1,170 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Roi de UX</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="styles/vendor.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/vendor/modernizr.js"></script>
+	
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5JD27KEQQ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Q5JD27KEQQ');
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-custom" id="top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html" title="ROI DE UX" ><img src="images/logo.svg" alt="ROI DE UX"></a>
+            </div>
+            <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
+                <li><a href="index.html#principal" title="O que é ROI?">O que é ROI?</a></li>
+                <li><a href="index.html#quem-somos" title="Quem somos?">Quem sou eu?</a></li>
+                <li><a href="index.html#calculadoras" title="Calculadoras">Calculadoras</a></li>
+                <li><a href="index.html#contato" title="Contato" onclick="myFunction()" target="_Blank">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid page-calculadora">
+        <section id="app" class="principal">
+            <div class="row">
+                <div class="col-lg-12 card">
+                    <div class="row">
+                        <div class="col-lg-12"><img src="images/helpdesk-icon.svg" class="icon"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12 left">
+                            <h1>Redução de ligações no suporte</h1>
+                            <p>Se os clientes podem localizar informações com facilidade em seu site e precisam menos de ajuda do suporte, reduzindo os custos e melhorando o ROI.</p>
+                            <p><strong>Exemplo:<br>Montamos um site com um FAQ bem completo e vivemos atualizando as informações para casos novos. Logo nossas ligações no suporte cairam 25%.</strong></p>
+                        </div>
+                        <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12 right">
+                            <h1>Como calcular o ROI da redução de ligações no suporte?</h1>
+                            <p>Para entender qual o retorno do investimento sobre o redução de ligações no suporte, você precisa das seguintes métricas.</p>
+                            <ul class="list-metrics">
+                                <li>Número de ligações para o Call Center</li>
+                                <li>Redução do volume de ligações</li>
+                                <li>Quantos dias por ano</li>
+                                <li>Salário por ano</li>
+                                <li>Tempo médio das ligações</li>
+                                <li>Custo do Investimento</li>
+                                <li>Tempo de Vida do Projeto</li>
+                            </ul>
+                            <p>Juntou essas métricas? Então coloque os dados na calculadora abaixo e veja quanto foi o seu ROI por esse projeto.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="mg-top">Calculadora de ROI da redução de ligações no suporte</h1></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
+                            <form class="form-horizontal calculadora">
+                                <div class="form-group">
+                                    <label for="usuarios" class="col-sm-7">Número de ligações:</label>
+                                    <div class="col-sm-5">
+                                        <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" v-model="NumberofCallsperyear">
+                                        <span>por ano</span></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="usuarios" class="col-sm-7">Redução do vol. de ligações:</label>
+                                    <div class="col-sm-5">
+                                        <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" v-model="CallVolumeReduction">
+                                        <span>%</span></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="usuarios" class="col-sm-7">Quantos dias por ano:</label>
+                                    <div class="col-sm-5">
+                                        <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" v-model="DaysPerYear">
+                                        <span>Dias</span></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="usuarios" class="col-sm-7">Horas de trabalho por dia:</label>
+                                    <div class="col-sm-5">
+                                        <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" v-model="WorkDayHours">
+                                        <span>Hs</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="usuarios" class="col-sm-7">Salário por ano:</label>
+                                    <div class="col-sm-5">
+                                        <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" v-model="LoadedSalary">
+                                        <span>(R$)</span></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="usuarios" class="col-sm-7">Tempo médio das ligações:</label>
+                                    <div class="col-sm-5">
+                                        <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" v-model="AverageLengthofcall">
+                                        <select class="form-control" v-model="LengthofCallTimeUnit">
+                                            <option>Hs</option>
+                                            <option>Min</option>
+                                            <option>Seg</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="usuarios" class="col-sm-7">Custo do investimento:</label>
+                                    <div class="col-sm-5">
+                                        <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" v-model="InitialCostInvestment">
+                                        <span>(R$)</span></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="usuarios" class="col-sm-7">Tempo de vida do projeto:</label>
+                                    <div class="col-sm-5">
+                                        <input type="number" onkeypress="return event.charCode >= 48" min="0" class="form-control" v-model="ExpectedProjectLife">
+                                        <span>Anos</span></div>
+                                </div>
+                                <!--<button type="submit" class="btn btn-custom">Calcular</button>-->
+                            </form>
+                        </div>
+                        <div class="col-lg-6 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-12 col-xs-12 resultados">
+                            <h2>Ganho futuro com essa melhoria:</h2>
+                            <h3>{{ resultFuture | currency }}</h3>
+                            <h2>Ganho total com essa melhoria:</h2>
+                            <h3>{{ resultBest | currency }}</h3>
+                            <h2>A sua taxa de ROI é:</h2>
+                            <h3>{{ resultRoi | percentage }} </h3></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 disclaimer-calc">
+                            <p>O Ganho total é calculado usando um modelo de fluxo de caixa com depreciação padrão de 0.05%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p class="text-center">Feito com <i class="fas fa-heart"></i> no Brasil © 2020</p>
+    </footer>
+    <a href="#top" class="top">
+        <div><i class="fas fa-chevron-circle-up fa-4x"></i></div>
+    </a>
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/plugins.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="scripts/vue/helpdesk.js"></script>
+
+    <script type="text/javascript">
+		function myFunction() {
+			var myWindow = window.open("https://www.linkedin.com/in/guigonzalez/", "", "width=845,height=1260");
+		}
+	</script>
+</body>
+</html>

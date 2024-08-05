@@ -5,7 +5,7 @@
   "scripts": {
     "start": "nx run roideux:serve",
     "build": "nx run roideux:build",
-    "build:prod": "nx run roideux:build --configuration=production --verbose"
+    "build:prod": "nx run roideux:build --configuration=production --verbose --skip-nx-cache"
   },
   "private": true,
   "sideEffects": false,

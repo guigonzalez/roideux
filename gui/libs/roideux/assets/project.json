@@ -1,5 +1,5 @@
 {
-  "name": "assets",
+  "name": "roideux-assets",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/roideux/assets/src",
   "prefix": "lib",
@@ -8,10 +8,7 @@
   "targets": {
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
-      "options": {
-        "jestConfig": "libs/roideux/assets/jest.config.ts"
-      }
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"]
     },
     "lint": {
       "executor": "@nx/eslint:lint"

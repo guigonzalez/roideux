@@ -1,5 +1,5 @@
 {
-  "name": "ui",
+  "name": "roideux-ui",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/roideux/ui/src",
   "prefix": "lib",
